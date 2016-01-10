@@ -1,12 +1,17 @@
 var express = require('express');
+var database = require('./database');
 
 var app = express();
 
 function initialise(){
 
-    server();
+    database.openDatabase(function(){
 
-    router();
+        server();
+
+        router();
+
+    });
 
 };
 
