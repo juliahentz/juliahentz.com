@@ -4,19 +4,23 @@ angular.module('juliahentz').config(function($stateProvider, $urlRouterProvider)
 
     $stateProvider.state('home', {
         url: '/home',
-        templateUrl: 'partial/home/home.html'
+        templateUrl: 'partial/home/home.html',
+        controller: 'HomeCtrl'
     });
     $stateProvider.state('projects', {
         url: '/projects',
-        templateUrl: 'partial/projects/projects.html'
+        templateUrl: 'partial/projects/projects.html',
+        controller: 'ProjectsCtrl'
     });
     $stateProvider.state('about', {
         url: '/about',
-        templateUrl: 'partial/about/about.html'
+        templateUrl: 'partial/about/about.html',
+        controller: 'AboutCtrl'
     });
     $stateProvider.state('contact', {
         url: '/contact',
-        templateUrl: 'partial/contact/contact.html'
+        templateUrl: 'partial/contact/contact.html',
+        controller: 'ContactCtrl'
     });
     /* Add New States Above */
     $urlRouterProvider.otherwise('/home');
