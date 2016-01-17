@@ -29,7 +29,12 @@ function server(){
 
 function router(){
 
-    app.use('/', express.static('public'));
+    app.set('views', __dirname + '/public/views');
+    app.set('view engine', 'ejs');
+
+    app.get('/', function(req, res) {
+        res.render('pages/index');
+    });
     app.use('/cms', express.static('cms'));
 
 };
