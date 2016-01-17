@@ -1,0 +1,110 @@
+body {
+
+  background-color: #f3eadb;
+  font-family: 'Lato', sans-serif;
+  overflow: auto;
+
+}
+
+.main-menu-bar{
+
+  background-color: #1c0716;
+  width: 100%;
+  overflow: auto;
+  color: #fff;
+  font-size: 16px;
+  box-shadow: 0px 1px 10px #220e1a;
+  text-shadow: 3px 3px 10px #220e1a, 6px 6px 20px #220e1a;
+  padding:10px;
+  z-index: 1;
+  position: relative;
+  display: block;
+
+}
+
+.menu-button{
+
+  display: inline-block;
+
+}
+
+.menu-button::before{
+
+  content: '';
+  position: absolute;
+  top: 0;
+  overflow: visible;
+  width: 40px;
+  height: 47px;
+  z-index: -1;
+  -webkit-transform: skewX(-23deg);
+  -moz-transform: skewX(-23deg);
+  -ms-transform: skewX(-23deg);
+  -o-transform: skewX(-23deg);
+  transform: skewX(-23deg);
+  -webkit-backface-visibility: hidden;
+  box-shadow: 5px 0px 10px #000;
+  background: #1c0716; /* Old browsers */
+  background: -moz-linear-gradient(180deg, #1c0716 35%, #47223b 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(180deg, #1c0716 35%,#47223b 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(90deg, #1c0716 35%,#47223b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3a0f2b', endColorstr='#5e1846',GradientType=0 ); /* IE6-9 */
+
+}
+
+.navigation-buttons{
+
+  float: right;
+  margin-top: 2px;
+  margin-right: 50px;
+  letter-spacing: 15px;
+
+}
+
+.icon-disc {
+
+  position: relative;
+  left: 55px;
+
+}
+
+.icon-grid{
+
+  position: relative;
+  left: 55px;
+
+}
+.icon-head{
+
+  position: relative;
+  left: 55px;
+
+}
+.icon-speech-bubble{
+
+  position: relative;
+  left: 55px;
+
+}
+
+#home-button {
+
+  float: left;
+  font-weight: 100;
+  letter-spacing: 4px;
+  display: inline-block;
+
+}
+
+#juliahentz{
+
+  margin-left: 55px;
+
+}
+
+#hentz{
+
+  font-weight: 400;
+  letter-spacing: 2px;
+
+}

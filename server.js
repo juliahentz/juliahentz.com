@@ -3,6 +3,7 @@ var bodyParser = require('body-parser')
 var database = require('./database');
 
 var app = express();
+var port = 3000;
 
 function initialise(){
 
@@ -23,7 +24,7 @@ initialise();
 
 function server(){
 
-    app.listen(3000, function(){
+    app.listen(port, function(){
 
         console.log('Server is up and running');
 
@@ -33,23 +34,24 @@ function server(){
 
 function router(){
 
+    app.use(express.static(__dirname + '/public'));
+    app.use('/cms', express.static('cms'));
+
     app.set('views', __dirname + '/public/views');
     app.engine('ejs', require('ejs').renderFile);
     app.set('view engine', 'ejs');
 
     app.get('/', function(req, res) {
-        res.render('pages/index');
+        res.render('pages/home/index');
     });
     app.get('/projects', function(req,res){
         res.render('pages/projects');
     });
     app.get('/about', function(req,res){
-        res.render('pages/about');
+        res.render('pages/about/about');
     });
     app.get('/contact', function(req,res){
-        res.render('pages/contact');
+        res.render('pages/contact/contact');
     });
-
-    app.use('/cms', express.static('cms'));
 
 };
