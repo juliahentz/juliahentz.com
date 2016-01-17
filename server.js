@@ -44,8 +44,11 @@ function router(){
     app.get('/', function(req, res) {
         res.render('pages/home/index');
     });
-    app.get('/projects', function(req,res){
-        res.render('pages/projects');
+    app.get('/design', function(req,res){
+        res.render('pages/design/design');
+    });
+    app.get('/development', function(req,res){
+        res.render('pages/development/development');
     });
     app.get('/about', function(req,res){
         res.render('pages/about/about');

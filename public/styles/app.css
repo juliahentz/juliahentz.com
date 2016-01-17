@@ -6,36 +6,38 @@ body {
 
 }
 
-.main-menu-bar{
+.main-menu-bar {
 
   background-color: #1c0716;
   width: 100%;
+  height: 38px;
   overflow: auto;
-  color: #fff;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  line-height: 38px;
+  z-index: 1;
   font-size: 16px;
+  color: #fff;
   box-shadow: 0px 1px 10px #220e1a;
   text-shadow: 3px 3px 10px #220e1a, 6px 6px 20px #220e1a;
-  padding:10px;
-  z-index: 1;
-  position: relative;
-  display: block;
 
 }
 
-.menu-button{
+.menu-button {
 
   display: inline-block;
 
 }
 
-.menu-button::before{
+.menu-button::before {
 
   content: '';
   position: absolute;
   top: 0;
   overflow: visible;
   width: 40px;
-  height: 47px;
+  height: 38px;
   z-index: -1;
   -webkit-transform: skewX(-23deg);
   -moz-transform: skewX(-23deg);
@@ -52,11 +54,11 @@ body {
 
 }
 
-.navigation-buttons{
+.navigation-buttons {
 
   float: right;
   margin-top: 2px;
-  margin-right: 50px;
+  margin-right: 70px;
   letter-spacing: 15px;
 
 }
@@ -68,19 +70,27 @@ body {
 
 }
 
-.icon-grid{
+.icon-image {
 
   position: relative;
   left: 55px;
 
 }
-.icon-head{
+
+.icon-air-play{
 
   position: relative;
   left: 55px;
 
 }
-.icon-speech-bubble{
+
+.icon-head {
+
+  position: relative;
+  left: 55px;
+
+}
+.icon-speech-bubble {
 
   position: relative;
   left: 55px;
@@ -96,15 +106,30 @@ body {
 
 }
 
-#juliahentz{
+#juliahentz {
 
   margin-left: 55px;
 
 }
 
-#hentz{
+#hentz {
 
   font-weight: 400;
   letter-spacing: 2px;
+
+}
+
+.footer {
+
+  background-color: #1c0716;
+  width: 100%;
+  height: 38px;
+  position: absolute;
+  bottom: 0px;
+  left:0px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 100;
+  box-shadow: 0px 1px 10px #220e1a;
 
 }
