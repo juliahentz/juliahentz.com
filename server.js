@@ -50,27 +50,27 @@ function router(){
     ];
 
     app.get('/', function(req, res) {
-        res.render('pages/home/index', {
+        res.render('pages/index', {
             icons:icons
         });
     });
     app.get('/design', function(req,res){
-        res.render('pages/design/design', {
+        res.render('pages/design', {
             icons:icons
         });
     });
     app.get('/development', function(req,res){
-        res.render('pages/development/development', {
+        res.render('pages/development', {
             icons:icons
         });
     });
     app.get('/about', function(req,res){
-        res.render('pages/about/about', {
+        res.render('pages/about', {
             icons:icons
         });
     });
     app.get('/contact', function(req,res){
-        res.render('pages/contact/contact', {
+        res.render('pages/contact', {
             icons:icons
         });
     });
