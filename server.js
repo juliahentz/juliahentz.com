@@ -41,20 +41,38 @@ function router(){
     app.engine('ejs', require('ejs').renderFile);
     app.set('view engine', 'ejs');
 
+    var icons = [
+        { icon: 'icon-disc', name: 'home', route:'/'},
+        { icon: 'icon-image', name: 'design', route:'/design'},
+        { icon: 'icon-air-play', name: 'development', route:'/development'},
+        { icon: 'icon-head', name: 'about', route:'/about'},
+        { icon: 'icon-speech-bubble', name: 'contact', route:'/contact'}
+    ];
+
     app.get('/', function(req, res) {
-        res.render('pages/home/index');
+        res.render('pages/home/index', {
+            icons:icons
+        });
     });
     app.get('/design', function(req,res){
-        res.render('pages/design/design');
+        res.render('pages/design/design', {
+            icons:icons
+        });
     });
     app.get('/development', function(req,res){
-        res.render('pages/development/development');
+        res.render('pages/development/development', {
+            icons:icons
+        });
     });
     app.get('/about', function(req,res){
-        res.render('pages/about/about');
+        res.render('pages/about/about', {
+            icons:icons
+        });
     });
     app.get('/contact', function(req,res){
-        res.render('pages/contact/contact');
+        res.render('pages/contact/contact', {
+            icons:icons
+        });
     });
 
 };

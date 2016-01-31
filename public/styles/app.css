@@ -10,7 +10,7 @@ body {
 
   background-color: #1c0716;
   width: 100%;
-  height: 38px;
+  height:38px;
   overflow: auto;
   position: absolute;
   top: 0px;
@@ -21,6 +21,19 @@ body {
   color: #fff;
   box-shadow: 0px 1px 10px #220e1a;
   text-shadow: 3px 3px 10px #220e1a, 6px 6px 20px #220e1a;
+
+}
+
+.main-menu-bar a:link {
+
+  text-decoration: none;
+  color: #fff;
+
+}
+
+.main-menu-bar a:visited {
+
+  color: #fff;
 
 }
 
@@ -57,43 +70,44 @@ body {
 .navigation-buttons {
 
   float: right;
-  margin-top: 2px;
   margin-right: 70px;
   letter-spacing: 15px;
+  display: inline-block;
 
 }
 
-.icon-disc {
+.menu-label {
 
   position: relative;
-  left: 55px;
+  left: 35px;
+  margin-top: 0px;
+  margin-left:25px;
+  letter-spacing: normal;
+  display: inline-block;
+  font-weight: 300;
 
 }
 
-.icon-image {
+.icons {
 
   position: relative;
   left: 55px;
+  top: 2px;
+  display: inline-block;
 
 }
 
-.icon-air-play{
+.nav-iconset {
 
-  position: relative;
-  left: 55px;
-
+  display: inherit;
+  opacity:1;
 }
 
-.icon-head {
+.nav-labelset {
 
-  position: relative;
-  left: 55px;
-
-}
-.icon-speech-bubble {
-
-  position: relative;
-  left: 55px;
+  width: 31px;
+  display: none;
+  opacity:0;
 
 }
 
