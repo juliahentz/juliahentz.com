@@ -1,8 +1,10 @@
 body {
 
-  background-color: #f3eadb;
+  background-color: #f3eadb !important;
   font-family: 'Lato', sans-serif;
   overflow: auto;
+  margin: 0;
+  padding: 0;
 
 }
 
@@ -131,6 +133,57 @@ body {
   font-weight: 400;
   letter-spacing: 2px;
 
+}
+
+.ribbon-contrainer {
+
+  position: fixed;
+  overflow: auto;
+  float:left;
+  top: 70px;
+  bottom: 70px;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0px 1px 10px #220e1a;
+
+}
+
+.divider-wrapper{
+
+  position: absolute;
+
+}
+
+.designer-image-wrapper {
+
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+}
+
+.developper-image-wrapper{
+
+  position: relative;
+  overflow: hidden;
+  display: block;
+  width:500px;
+  height:500px;
+  background: url("../images/juliahentz_design.jpg") no-repeat;
+
+}
+
+.design-image{
+
+  display: block;
+  width: 500px;
+  height: 500px;
+  position: relative;
+
+  background: url("../images/juliahentz_development.jpg") no-repeat;
 }
 
 .footer {
