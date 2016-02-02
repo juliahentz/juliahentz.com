@@ -4,10 +4,11 @@ angular.module('cms').config(function($stateProvider, $urlRouterProvider) {
 
     $stateProvider.state('design-projects', {
         url: '/design-projects',
-        templateUrl: 'partial/design-projects/design-projects.html'
+        templateUrl: 'partial/design-projects/design-projects.html',
+        controller: 'DesignProjectsCtrl'
     });
     /* Add New States Above */
-    $urlRouterProvider.otherwise('/home');
+    $urlRouterProvider.otherwise('/design-projects');
 
 });
 
