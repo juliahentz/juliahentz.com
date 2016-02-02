@@ -1,14 +1,13 @@
 {
   "name": "juliahentz.com",
   "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
+  "main": "run.js",
   "engines": {
-    "node":"4.1.1",
-    "npm":"2.1.x"
+    "node": "4.1.1",
+    "npm": "2.1.x"
   },
   "scripts": {
-    "start":"node server"
+    "start": "node run"
   },
   "author": "",
   "license": "ISC",
@@ -17,5 +16,15 @@
     "ejs": "^2.3.4",
     "express": "^4.13.3",
     "mongoose": "^4.3.5"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juliahentz/juliahentz.com.git"
+  },
+  "bugs": {
+    "url": "https://github.com/juliahentz/juliahentz.com/issues"
+  },
+  "homepage": "https://github.com/juliahentz/juliahentz.com#readme",
+  "description": ""
 }
