@@ -1,5 +1,6 @@
 $(document).ready(function() {
 
+    console.log('test');
     var $navBtn = $('.navigation-buttons');
 
     var $navIcons = $('.nav-iconset');
