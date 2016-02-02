@@ -3,7 +3,7 @@ var bodyParser = require('body-parser')
 var database = require('./database');
 
 var app = express();
-var port = 3000;
+var port = process.env.PORT || 3000;
 
 function initialise(){
 
