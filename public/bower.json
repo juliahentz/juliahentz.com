@@ -1,16 +1,27 @@
 {
   "name": "juliahentz.com",
-  "version": "0.0.0",
-  "main": "index.html",
+  "homepage": "https://github.com/juliahentz/juliahentz.com",
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
   "ignore": [
     "**/.*",
     "node_modules",
-    "bower_components"
+    "bower_components",
+    "test",
+    "tests"
   ],
   "dependencies": {
-    "jquery": "~2.0",
-    "bootstrap": "~3.1",
-    "jquery.transit":"0.9.12",
-    "fullpage.js":"2.7.6"
+    "eventie": ">=1.0.4 <2",
+    "eventEmitter": "4.x",
+    "fullpage.js": "~2.7.6",
+    "bootstrap": "^3.3.6",
+    "jquery.transit": "~0.9.12",
+    "magnific-popup": "~1.0.0",
+    "imagesloaded": "~3.1.8",
+    "jquery": "~2.2.0",
+    "normalize.css": "~3.0.2",
+    "requirejs": "~2.1.16"
   }
 }
