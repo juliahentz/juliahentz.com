@@ -135,6 +135,46 @@ body {
 
 }
 
+.side-menu{
+
+  position:absolute;
+  right: -150px;
+  width: 150px;
+  height: 100%;
+  background: #1c0716; /* Old browsers */
+  background: -moz-linear-gradient(#1c0716 35%, #47223b 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(#1c0716 35%,#47223b 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(#1c0716 35%,#47223b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  z-index: 1000;
+
+}
+
+.side-menu .menu-label{
+
+  position: relative;
+  margin-top: 10px;
+  left: 5px;
+  letter-spacing: normal;
+  font-weight: 300;
+  color: #fff;
+  display:inline-block;
+
+}
+
+.side-menu-hide{
+
+  display: none;
+
+}
+
+.navigation-burger-icon{
+
+  position: absolute;
+  right: 70px;
+  display: none;
+
+}
+
 .ribbon-contrainer {
 
   position: fixed;
@@ -143,6 +183,7 @@ body {
   top: 70px;
   bottom: 70px;
   width: 100%;
+  right: 0px;
   background-color: #fff;
   box-shadow: 0px 1px 10px #220e1a;
 
@@ -198,5 +239,21 @@ body {
   font-size: 14px;
   font-weight: 100;
   box-shadow: 0px 1px 10px #220e1a;
+
+}
+
+@media only screen and (max-width: 600px) {
+
+  .divider-wrapper {
+    display: none;
+  }
+
+  .navigation-buttons{
+    display: none;
+  }
+
+  .navigation-burger-icon{
+    display: block;
+  }
 
 }

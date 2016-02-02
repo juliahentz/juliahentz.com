@@ -14,13 +14,12 @@ $(document).ready(function() {
     var ribbonContainerHeight = $ribbonContainer.height();
 
     var originalHeight;
-    var origianWidth;
+    var origialWidth;
     var initialScale;
-    var scaleProportion;
 
     $dividerWrapper.css({
-        left: (fullWidth/2)-(wrapperWidth/2),
-        top: (fullHeight/2)-(wrapperWidth/1.6),
+        left    : (fullWidth/2)-(wrapperWidth/2),
+        top     : (fullHeight/2)-(wrapperWidth/1.6),
     });
 
     if(ribbonContainerHeight<=550){
@@ -36,26 +35,33 @@ $(document).ready(function() {
     $(function(){
 
         originalHeight = fullHeight;
-        origianWidth = fullWidth;
+        origialWidth = fullWidth;
 
         $(window).on('resize', function(){
             fullWidth = $(window).width();
             fullHeight = $(window).height();
             var ribbonContainerHeight = $ribbonContainer.height();
 
-            scaleProportion = ribbonContainerHeight/550;
+            var scaleProportionHeight = ribbonContainerHeight/550;
+            var scaleProportionWidth = fullWidth/origialWidth;
 
-            $dividerWrapper.css({
-                left: (fullWidth/2)-(wrapperWidth/2),
-                top: (fullHeight/2)-(wrapperWidth/1.6),
-                scale: scaleProportion
-            });
-
+            if(scaleProportionHeight>=scaleProportionWidth){
+                $dividerWrapper.css({
+                    left    : (fullWidth/2)-(wrapperWidth/2),
+                    top     : (fullHeight/2)-(wrapperWidth/1.6),
+                    scale   : scaleProportionWidth
+                });
+            }else if(scaleProportionHeight<scaleProportionWidth){
+                $dividerWrapper.css({
+                    left    : (fullWidth/2)-(wrapperWidth/2),
+                    top     : (fullHeight/2)-(wrapperWidth/1.6),
+                    scale   : scaleProportionHeight
+                });
+            }
 
         });
 
     });
-
 
     $pageContainer.on("mousemove", function (e) {
 
@@ -64,24 +70,23 @@ $(document).ready(function() {
 
         var $myContainer = $(this);
 
-        if (mouseX < 0) {
+        if(mouseX < 0) {
+            mouseX = fullWidth;
+        }else if (mouseX > fullWidth) {
             mouseX = fullWidth;
         }
-        else if (mouseX > fullWidth) {
-            mouseX = fullWidth;
-        };
 
         $myContainer.find('.designer-image-wrapper').css({
-            transform: 'translateX(' + (-1*(mouseX*mouseMoveProportion)) + 'px)',
-            transition: 'ease-out',
-            rotate: '23deg',
-            top:-(mouseX/fullWidth)*202,
-            'border-right': '5px solid #fff'
+            transform       : 'translateX(' + (-1*(mouseX*mouseMoveProportion)) + 'px)',
+            transition      : 'ease-out',
+            rotate          : '23deg',
+            top             :-(mouseX/fullWidth)*202,
+            'border-right'  : '5px solid #fff'
         });
         $myContainer.find('.design-image').css({
-            transform: 'translateX(' + ((mouseX*mouseMoveProportion)) + 'px)',
-            transition: 'ease-out',
-            rotate: '-23deg'
+            transform   : 'translateX(' + ((mouseX*mouseMoveProportion)) + 'px)',
+            transition  : 'ease-out',
+            rotate      : '-23deg'
         });
 
     });

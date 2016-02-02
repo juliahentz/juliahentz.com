@@ -12,6 +12,10 @@ $(document).ready(function() {
     var timer;
     var timer2;
 
+    var $sideMenu = $('.side-menu');
+    var buttonClicked = false;
+    var $navBurgerIcon = $('.navigation-burger-icon');
+
     $navBtn.mouseenter(function(){
 
         mouseOverBoolean = true;
@@ -92,6 +96,23 @@ $(document).ready(function() {
         $(this).transition({
             scale:1
         },100, 'ease');
+
+    });
+
+    $('.navigation-burger-icon').click(function(){
+        buttonClicked = !buttonClicked;
+
+        if(buttonClicked){
+            $sideMenu.removeClass('side-menu-hide');
+            $sideMenu.transition({ x: '-150' });
+            $navBurgerIcon.transition({ x: '-150'})
+        }else{
+            $sideMenu.transition({ x: '0' });
+            $navBurgerIcon.transition({ x: '0'})
+            setTimeout(function(){
+                $sideMenu.addClass('side-menu-hide');
+            }, 500);
+        }
 
     });
 
