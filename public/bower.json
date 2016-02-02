@@ -1,0 +1,16 @@
+{
+  "name": "juliahentz.com",
+  "version": "0.0.0",
+  "main": "index.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "jquery": "~2.0",
+    "bootstrap": "~3.1",
+    "jquery.transit":"0.9.12",
+    "fullpage.js":"2.7.6"
+  }
+}
