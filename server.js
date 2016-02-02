@@ -1,6 +1,6 @@
 var express = require('express');
 var bodyParser = require('body-parser')
-var database = require('./database');
+//var database = require('./database');
 
 var app = express();
 var port = process.env.PORT || 3000;
@@ -10,13 +10,13 @@ function initialise(){
     app.use(bodyParser.json());
     app.use(bodyParser.urlencoded());
 
-    database.openDatabase(function(){
+    //database.openDatabase(function(){
 
         server();
 
         router();
 
-    });
+    //});
 
 };
 
