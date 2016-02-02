@@ -99,7 +99,7 @@ $(document).ready(function() {
 
     });
 
-    $('.navigation-burger-icon').click(function(){
+    $navBurgerIcon.click(function(){
         buttonClicked = !buttonClicked;
 
         if(buttonClicked){
