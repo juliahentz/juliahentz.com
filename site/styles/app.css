@@ -1,0 +1,350 @@
+body {
+
+  background-color: #f3eadb !important;
+  font-family: 'Lato', sans-serif;
+  overflow: auto;
+  margin: 0;
+  padding: 0;
+
+}
+
+/*
+SECTION 1
+Main menu and menu buttons
+*/
+
+  .main-menu-bar {
+
+    background-color: #1c0716;
+    width: 100%;
+    height:38px;
+    overflow: auto;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    line-height: 38px;
+    z-index: 1;
+    font-size: 16px;
+    color: #fff;
+    box-shadow: 0px 1px 10px #220e1a;
+    text-shadow: 3px 3px 10px #220e1a, 6px 6px 20px #220e1a;
+
+  }
+
+  .main-menu-bar a:link {
+
+    text-decoration: none;
+    color: #fff;
+
+  }
+
+  .main-menu-bar a:visited {
+
+    color: #fff;
+
+  }
+
+  .menu-button {
+
+    display: inline-block;
+
+  }
+
+  .menu-button::before {
+
+    content: '';
+    position: absolute;
+    top: 0;
+    overflow: visible;
+    width: 40px;
+    height: 38px;
+    z-index: -1;
+    -webkit-transform: skewX(-23deg);
+    -moz-transform: skewX(-23deg);
+    -ms-transform: skewX(-23deg);
+    -o-transform: skewX(-23deg);
+    transform: skewX(-23deg);
+    -webkit-backface-visibility: hidden;
+    box-shadow: 5px 0px 10px #000;
+    background: #1c0716; /* Old browsers */
+    background: -moz-linear-gradient(180deg, #1c0716 35%, #76474f 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(180deg, #1c0716 35%,#76474f 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(90deg, #1c0716 35%,#76474f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3a0f2b', endColorstr='#5e1846',GradientType=0 ); /* IE6-9 */
+
+  }
+
+  .navigation-buttons {
+
+    float: right;
+    margin-right: 70px;
+    letter-spacing: 15px;
+    display: inline-block;
+
+  }
+
+  .menu-label {
+
+    position: relative;
+    left: 35px;
+    margin-top: 0px;
+    margin-left:25px;
+    letter-spacing: normal;
+    display: inline-block;
+    font-weight: 300;
+
+  }
+
+  .icons {
+
+    position: relative;
+    left: 55px;
+    top: 2px;
+    display: inline-block;
+
+  }
+
+  .nav-iconset {
+
+    display: inherit;
+    opacity:1;
+  }
+
+  .nav-labelset {
+
+    width: 31px;
+    display: none;
+    opacity:0;
+
+  }
+
+  #home-button {
+
+    float: left;
+    font-weight: 100;
+    letter-spacing: 4px;
+    display: inline-block;
+
+  }
+
+  #juliahentz {
+
+    margin-left: 55px;
+
+  }
+
+  #hentz {
+
+    font-weight: 400;
+    letter-spacing: 2px;
+
+  }
+
+/*
+SECTION 2
+Side menu for mobile devices
+*/
+
+  .side-menu{
+
+    position:absolute;
+    right: -150px;
+    width: 150px;
+    height: 100%;
+    background: #1c0716; /* Old browsers */
+    background: -moz-linear-gradient(#1c0716 35%, #76474f 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(#1c0716 35%,#76474f 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(#1c0716 35%,#76474f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    z-index: 1000;
+
+  }
+
+  .side-menu .menu-label{
+
+    position: relative;
+    margin-top: 10px;
+    left: 5px;
+    letter-spacing: normal;
+    font-weight: 300;
+    color: #fff;
+    display:inline-block;
+
+  }
+
+  .side-menu-hide{
+
+    display: none;
+
+  }
+
+  .navigation-burger-icon{
+
+    position: absolute;
+    right: 70px;
+    display: none;
+
+  }
+
+/*
+SECTION 3
+Static elements
+*/
+
+  .ribbon-contrainer {
+
+    position: fixed;
+    overflow: auto;
+    float:left;
+    top: 70px;
+    bottom: 70px;
+    width: 100%;
+    right: 0px;
+    background-color: #fff;
+    box-shadow: 0px 1px 10px #220e1a;
+
+  }
+
+  .footer {
+
+    background-color: #1c0716;
+    width: 100%;
+    height: 38px;
+    position: absolute;
+    bottom: 0px;
+    left:0px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 100;
+    box-shadow: 0px 1px 10px #220e1a;
+
+  }
+
+  .vertical-line{
+
+    width: 2px;
+    background-color: #1c0716;
+    box-shadow: 0px 1px 10px #220e1a;
+    left: 40px;
+
+  }
+
+/*
+SECTION 4
+Homepage elements
+*/
+
+  .divider-wrapper{
+
+    position: absolute;
+
+  }
+
+  .designer-image-wrapper {
+
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+  }
+
+  .developper-image-wrapper{
+
+    position: relative;
+    overflow: hidden;
+    display: block;
+    width:500px;
+    height:500px;
+    background: url("../images/juliahentz_design.jpg") no-repeat;
+
+  }
+
+  .design-image{
+
+    display: block;
+    width: 500px;
+    height: 500px;
+    position: relative;
+
+    background: url("../images/juliahentz_development.jpg") no-repeat;
+  }
+
+
+  .developer-invite-text {
+
+    position: absolute;
+    overflow: auto;
+    width: 25%;
+    float: left;
+    margin-left: 25px;
+    bottom: 60px;
+    text-align: center;
+
+  }
+
+  .design-invite-text {
+
+    position: absolute;
+    overflow: auto;
+    top:60px;
+    width: 25%;
+    right: 20px;
+    text-align: center;
+
+  }
+
+  #home-developer-vertical-line{
+
+    position:relative;
+    left:10%;
+
+  }
+
+  .home-title-text-box{
+
+
+
+  }
+
+/*
+SECTION 5
+Design page elements
+*/
+
+/*
+SECTION 6
+Development page elements
+*/
+
+/*
+SECTION 7
+About page elements
+*/
+
+/*
+SECTION 8
+Contact page elements
+*/
+
+/*
+SECTION 9
+Mobile
+*/
+
+  @media only screen and (max-width: 600px) {
+
+    .divider-wrapper {
+      display: none;
+    }
+
+    .navigation-buttons{
+      display: none;
+    }
+
+    .navigation-burger-icon{
+      display: block;
+    }
+
+  }
